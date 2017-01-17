@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Preston The Dev</title>
+	<link rel="stylesheet" type="text/css" href="css/skeleton.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+
+<div id="port-modal"></div>
+
+<div id="header-container" class="">
+	<div id="header-wrapper" class="container">
+		<div class="row">
+			 <div class="twelve columns header-inner">
+			  	<ul id="header-table">
+			  	
+			  			<li class="header-item header-logo">Logo</li>
+				  		
+				  		<li class="header-item">
+				  		<a href="#sec-contact">Contact</a>
+				  		</li>
+						
+						<li class="header-item">
+				  		<a href="#sec-about">About</a>
+				  		</li>
+				  	
+						<li class="header-item">
+				  		<a href="#sec-skills">Skills</a>
+				  		</li>
+				  		
+				  		<li class="header-item">
+				  		<a href="#sec-portfolio">Portfolio</a>
+				  		</li>
+
+				  		<li class="hamburger-menu">
+				  		&#9776;
+				  		</li>
+			  	</ul>
+			  </div>
+		</div>
+	</div>
+</div>
+
+
+<div class="container">
+
+  <!-- columns should be the immediate child of a .row -->
+  <div id="sec-hero" class="section row">
+  	<div id="hero-wrapper">
+	    <div class="twelve column">
+	    	<div id="hero-header-text"class="hero-text">
+	    	Web Developer
+	    	</div>
+			<div id="hero-detail-text" class="hero-text">
+			My domain is the front-end.
+			</br>
+			I am a Javascript expert.
+			</div>
+			<div id="hero-name" class="hero-text">
+			My name is Preston Chen.
+			</div>
+	    </div>
+    </div>
+  </div>
+
+  <!-- just use a number and class 'column' or 'columns' -->
+  <div id="sec-portfolio" class="section row">
+    <div class="twelve columns">
+    	<div class="sec-header">Portfolio</div>
+    </div>
+    
+    <div class="twelve columns port-container">
+    	<div class="port-wrapper vf-banner" data="vf">
+    		<div class="port-gradient"></div>
+    		<div class="port-item-title">
+    			ViewFind
+    		</div>
+    	</div>
+    </div>
+
+	 <div class="twelve columns port-container">
+    	<div class="port-wrapper dk-banner" data="dk">
+    		<div class="port-gradient"></div>
+    		<div class="port-item-title">
+    			DollsKill
+    		</div>
+    	</div>
+    </div>
+
+     <div class="twelve columns port-container">
+
+    	<div class="port-wrapper pab-banner" data="pab">
+    		<div class="port-gradient"></div>
+    		<div class="port-item-title">
+    			Precision Auto Body Shop
+    		</div>
+    	</div>
+    </div>
+
+  </div>
+
+  <!-- there are a few shorthand columns widths as well -->
+  <div id="sec-skills" class="section row">
+	
+	<div class="twelve columns">
+		<div class="sec-header">Skills</div>
+	</div>
+    
+    <div class="skills-wrapper">
+	    <div class="skills-item">
+	    	<div class="skills-item-title">UI/Graphic Design</div>
+			<div class="skills-item-detail">
+				<p>
+					What the Helvetica!? You code and design?
+					Yea, I'm a developer with a graphic design
+					background. I'm no stranger to the Adobe Suite, and can create a slew of visual assets in no time.
+				</p>
+			</div>
+	    </div>
+
+	    <div class="skills-item">
+	    	<div class="skills-item-title">Web Development</div>
+			<div class="skills-item-detail">
+				<p>
+					You want Html, Css, Javascript, and Php code? Then I'm your guy. I utilize Javascript to create UI, and to interface with APIs. React.js is my framework of choice.
+				</p>
+			</div>
+	    </div>
+
+	     <div class="skills-item">
+	     	<div class="skills-item-title">CS Fundamentals</div>
+			<div class="skills-item-detail">
+				<p>
+					I find studying design patterns, and practicing coding koans highly enjoyable.
+					Ask me questions about fundamental searching and sorting algorithms, and you are sure to receive a comprable answer. 
+				</p>
+			</div>
+	     </div>
+     </div>
+
+  </div>
+
+  <div id="sec-about" class="section row">
+	<div class="twelve columns">
+		<div class="sec-header">About</div>
+	</div>
+
+	<div class="row about-wrapper">
+	    <div class="four columns"><div class="about-img"></div></div>
+
+	    <div class="eight columns"><div class="about-detail">
+		    <p>
+		    	I'm a living breathing human who loves to hike, and drink coffee. That just described 80% of all developers in the wild. My humor is dry, however not as much as your Mom's turkey. People say I play well with otters. My attitude is light, but I maintain professionalism in my work at all times.
+		    </p>
+	  	</div>
+	</div>
+
+  </div>	
+
+  <div id="sec-contact" class="section row"	>
+  	<div class="twelve columns">
+		<div class="sec-header">Get In Touch</div>
+	</div>
+
+    <div class="contact-form">
+
+			  <form name="contactform" method="post" action="php/email.php">
+			 
+
+			  <label for="first_name">Name *</label>
+
+			  <input  type="text" name="name" maxlength="50" size="30">
+			 
+
+			  <label for="email">Email Address *</label>
+
+			 
+			  <input  type="text" name="email" maxlength="80" size="30">
+			  
+			 
+			  <label for="comments">Comments *</label>
+			 
+			  <textarea  name="comments" maxlength="1000" cols="25" rows="6"></textarea>
+			 
+
+			  <input type="submit" value="Submit">  
+			 
+			</form>
+	</div>
+    	
+</div>
+
+
+  	<div class="twelve columns" id="footer">
+		<a href="" class="linkedin-link">LINKED-IN</a>
+  	</div>
+
+</div><!--end of container-->
+
+<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script type="text/javascript" src="js/actions.js"></script>
+
+</body>
+</html>
