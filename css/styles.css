@@ -1,326 +1,571 @@
-	@font-face {
-	  font-family: 'Inconsolata-medium';
-	  src: url('../assets/fonts/Inconsolata.otf'); /* IE9 Compat Modes */
-	 }
+		@font-face {
+		  font-family: 'Inconsolata-medium';
+		  src: url('../assets/fonts/Inconsolata.otf'); /* IE9 Compat Modes */
+		 }
 
-	@font-face {
-	  font-family: 'Inconsolata-bold';
-	  src: url('../assets/fonts/Inconsolata-Bold.ttf'); /* IE9 Compat Modes */
-	 }
+		@font-face {
+		  font-family: 'Inconsolata-bold';
+		  src: url('../assets/fonts/Inconsolata-Bold.ttf'); /* IE9 Compat Modes */
+		 }
 
-	@font-face {
-	  font-family: 'NotoSerif-Regular';
-	  src: url('../assets/fonts/NotoSerif-Regular.ttf'); /* IE9 Compat Modes */
-	 }
+		@font-face {
+		  font-family: 'NotoSerif-Regular';
+		  src: url('../assets/fonts/NotoSerif-Regular.ttf'); /* IE9 Compat Modes */
+		 }
 
 
-	body,html{
-		width: 100%;
-		margin:0px;
+		body,html{
+			width: 100%;
+			margin:0px;
+			
+		}
+
+
+		body{
+		  background: radial-gradient(at 90% bottom,white,#FFD81E,#E90084,#ceddf9);
+		}
+
+		ul,li{
+			list-style: none;
+			margin-bottom: 0px;
+		}
+
+		.container{
+			max-width: 100%!important;
+			width: 100%!important;
+		}
+
+		/*header*/
+
+		#header-contaier{
+			width: 100%;
+			height: 100px;
+			position: fixed;
+			top: 0;
+			background:white;
+			
+		}
+		.section{
+			min-height: 90vh;
+		}
+		.sec-header:after{
+			display: block;
+		    content: "";
+		    width: 50px;
+		    height: 5px;
+		    background: black;
+		}
+
+		.hamburger-menu{
+			font-size: 2em;
+			color: white;
+			display: none;
+		}
+		.hamburger-menu p{
+			font-size: 1em;
+			display: inline;
+			font-family: 'Inconsolata-medium';
+		}
+		#header-wrapper{
+			height: 100%;
+		}
+		#header-table{
+			text-align: center;
+		    width: 80%;
+		    margin: 0 auto;
+		    display: inline-block;
+		    height: 50px;
+		    z-index: 10;
+		    position: relative;
+		    border: 1px solid white;
+		}
+
+
+		.header-inner{
+			margin-top: 25px;
+			text-align: center;
+		}
+		.header-item{
+			display: inline-block;
+			width: 16.5%;
+			height: 100%;
+			line-height: 50px;
+			letter-spacing: 2px;
+			font-size: 1.618em;
+			font-family: 'Inconsolata-bold';
+			float: right;
+			border-right: 1px solid white;
+		}
+		.header-item a{
+			color: white;
+			text-decoration: none;
+			padding-top: 2px;
+		}
+
+		.header-item:hover a{
+			border-top: 2px solid black;
+
+		} 
+		.header-logo{
+			border-right: 1px solid white;
+			text-align: center;
+			float: left;
+			color: white;
+			width: 33%;
+		}
+
+
+		/*hero*/
+
+		.hero-text{
+			font-family: 'Inconsolata-medium';
+			padding-left: 15%;
+			color: white;
+		}	 
+		#hero-header-text{
+			margin-top: 30px;
+			font-size: 6.854em;
+			color: white;
+		}
+		#hero-detail-text{
+			font-size: 2.618em;
+		}
+		#hero-name{
+			font-family: 'Inconsolata-bold';
+			font-size: 1.618em;
+			line-height: 3.2;
+		}
+
+
+		/*portfolio*/
+
+		.sec-header{
+			padding-left: 15%;
+			text-transform: uppercase;
+		    font-family: 'Inconsolata-medium';
+		    padding-left: 15%;
+		    font-size: 4.236em;
+		    margin-top: 60px;
+		    color: white;
+		    padding-bottom: 30px;
+		}
+		.port-gradient{
+			background: linear-gradient(to right, rgba(0,0,0,.6) 0%, rgba(255,252,255,0.37) 63%, rgba(255,252,255,0) 100%);
+		    display: block;
+		    width: 100%;
+		    height: 100%;
+		    position: absolute;
+		    z-index: 0;
+		}
+
+		.port-item-title{
+			color: white;
+		    line-height: 250px;
+		    justify-content: center;
+		    letter-spacing: 2px;
+		    padding-left: 15%;
+		    font-size: 2.618em;
+		    font-family: 'Inconsolata-medium';
+		    position: absolute;
+		}
+
+		.port-wrapper{
+			width: 80%;
+			margin:15px auto;
+			height: 250px;
+			background-size: cover!important;
+			background-repeat: no-repeat;
+			background-position: center center;
+			position: relative;
+		}
+
+		.dk-banner{
+			background: url('../assets/06_16_15_J_SIMMS_HP_1920x800.jpg');
+		}
+		.vf-banner{
+			background: url('../assets/vf-banner.jpg');
+		}
+		.port-wrapper:hover{
+			cursor: pointer;
+		}
+		.pab-banner{
+			background:url('../assets/pab-banner1.jpg');
+		}
+
+		/*skills*/
+		.skills-wrapper{
+			width: 80%;
+			margin:0 auto;
+			
+		}
+		.skills-item{
+			width:60%;
+			margin:30px auto;
+		}
+		.skills-item-title{
+			font-size: 1.618em;
+		  	font-family: 'Inconsolata-bold';
+		}
+		.skills-item-detail p{
+			margin-top: 15px;
+			line-height: 2;
+			letter-spacing: 2px;
+			font-family: 'NotoSerif-Regular';
+		}
+		/*about*/
+		.about-wrapper{
+			width: 80%;
+			margin:15px auto;
+		}
+		.about-detail p {
+			line-height: 2;
+		    font-family: 'NotoSerif-Regular';
+		    letter-spacing: 2px;
+		}
+		.about-img{
+			background:url('../assets/pchen.jpg');
+			height: 250px;
+			width: auto;
+			display: block;
+			background-size:contain;
+			background-repeat: no-repeat;
+			
+		}
+
+
+
+		/*contact*/
+
+		.contact-form{
+			width: 60%;
+			margin:0 auto;
+			min-width: 300px;
+		}
+
+		input[type="text"] {
+		    border-left: 0px;
+		    border-right: 0px;
+		    border-top: 0px;
+		    border-radius: 0px;
+		    border-bottom: 2px dotted black;
+		    background:transparent;
+		    width: 100%;
+		    height: 100px;
+		    font-family: 'Inconsolata-medium';
+		    padding:1em .5em;
+		    font-size: 1.618em;
+		}
+
+		input[type="text"]:focus{
+			border:0px;
+			border-bottom: 2px solid black;
+		}
+
+		input[type="submit"]{
+			border: 2px solid black;
+		    border-radius: 0px;
+		    font-family: 'Inconsolata-medium';
+		    font-size: 1.618em;
+		    color: black;
+		    letter-spacing: 2px;
+		    display: block;
+		    height: initial;
+		    padding:.5em 1.5em;
+		    transition: all .5s ease;
+		}
 		
-	}
+		input[type="submit"]:focus{
+			border:2px solid white;
+			color: white;
+		}
 
+		input[type="submit"]:hover{
+			border:2px solid white;
+			color: white;
+		}
 
-	body{
-	  background: radial-gradient(at 90% bottom,white,#FFD81E,#E90084,#ceddf9);
-	}
+		label{
+			font-size: 2.618em;
+		    font-family: 'Inconsolata-medium';
+		    font-weight: 300;
 
-	ul,li{
-		list-style: none;
-		margin-bottom: 0px;
-	}
+		}
 
-	.container{
-		max-width: 100%!important;
-		width: 100%!important;
-	}
+		textarea{
+			border:0px!important;
+			border-radius: 0px!important;
+			background:transparent;
+			border-bottom: 2px dotted black!important;
+			width: 100%;
+			font-family: 'Inconsolata-medium';
+		    padding:1em .5em;
+		    font-size: 1.618em;	
+		    height: 100px;
+		}
 
-	/*header*/
+		textarea::-webkit-scrollbar{
+			display: none;
+		}
 
-	#header-contaier{
-		width: 100%;
-		height: 100px;
+		textarea:focus{
+			border:0px;
+			border-bottom: 2px solid black;
+		}
+
+	/*modal*/
+	#port-modal{
+		height: 100vh;
+		background:rgba(0,0,0,1);
+		display: none;
+		overflow: scroll;
 		position: fixed;
-		top: 0;
-		background:white;
-		
+		z-index: 1;
+		top: 0px;
+		opacity: 0;
+		transition: all .5s ease;
 	}
-	.section{
-		min-height: 90vh;
-	}
-	.sec-header:after{
-		display: block;
-	    content: "";
-	    width: 50px;
-	    height: 5px;
-	    background: black;
+	.port-modal-images{
+		width: 60%;
+		float: left;
+		height: 90vh;
+		visibility: visible;
+		overflow-y: scroll; 
 	}
 
-	.hamburger-menu{
-		font-size: 2em;
-		color: white;
+	.port-modal-images::-webkit-scrollbar{
 		display: none;
 	}
 
-	#header-wrapper{
-		height: 100%;
-	}
-	#header-table{
-		text-align: center;
-	    width: 80%;
-	    margin: 0 auto;
-	    display: inline-block;
-	    height: 50px;
-	    border: 1px solid white;
-	}
-
-
-	.header-inner{
-		margin-top: 25px;
-		text-align: center;
-	}
-	.header-item{
-		display: inline-block;
-		width: 16.5%;
-		height: 100%;
-		line-height: 50px;
-		letter-spacing: 2px;
-		font-size: 1em;
-		font-family: 'Inconsolata-bold';
-		float: right;
-		border-right: 1px solid white;
-	}
-	.header-item a{
-		color: white;
-		text-decoration: none;
-		padding-top: 2px;
-	}
-
-	.header-item:hover a{
-		border-top: 2px solid black;
-
-	} 
-	.header-logo{
-		border-right: 1px solid white;
-		text-align: center;
-		float: left;
-		width: 33%;
-	}
-
-
-	/*hero*/
-
-	.hero-text{
-		font-family: 'Inconsolata-medium';
-		padding-left: 15%;
-		color: white;
-	}	 
-	#hero-header-text{
-		margin-top: 30px;
-		font-size: 6.854em;
-		color: white;
-	}
-	#hero-detail-text{
-		font-size: 2.618em;
-	}
-	#hero-name{
-		font-family: 'Inconsolata-bold';
-		font-size: 1.618em;
-		line-height: 3.2;
-	}
-
-
-	/*portfolio*/
-
-	.sec-header{
-		padding-left: 15%;
-		text-transform: uppercase;
-	    font-family: 'Inconsolata-medium';
-	    padding-left: 15%;
-	    font-size: 4.236em;
-	    margin-top: 60px;
-	    color: white;
-	    padding-bottom: 30px;
-	}
-	.port-gradient{
-		background: linear-gradient(to right, rgba(0,0,0,.6) 0%, rgba(255,252,255,0.37) 63%, rgba(255,252,255,0) 100%);
-	    display: block;
+	.port-modal-images:after {
+	    content: '';
 	    width: 100%;
-	    height: 100%;
-	    position: absolute;
-	    z-index: 0;
+	    height: 25%;
+	    position: fixed;
+	    left: 0;
+	    z-index: 10;
+	    bottom: 0;
+	    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 1%,rgba(0,0,0,1) 100%);
 	}
 
-	.port-item-title{
-		color: white;
-	    line-height: 250px;
-	    justify-content: center;
-	    letter-spacing: 2px;
-	    padding-left: 15%;
-	    font-size: 2.618em;
-	    font-family: 'Inconsolata-medium';
-	    position: absolute;
-	}
-
-	.port-wrapper{
+	.port-modal-images-inner img{
 		width: 80%;
-		margin:15px auto;
-		height: 250px;
-		background-size: cover!important;
-		background-repeat: no-repeat;
-		background-position: center center;
-		position: relative;
+		display: block;
+		margin:0 auto;
+		height: 50%;
+	    margin: 15% auto;
 	}
 
-	.dk-banner{
-		background: url('../assets/06_16_15_J_SIMMS_HP_1920x800.jpg');
+	.port-modal-text-inner{
+		color: white;
+		visibility: visible;
 	}
-	.vf-banner{
-		background: url('../assets/vf-banner.jpg');
+
+	.port-modal-text-body{
+		margin-top: 30px;
 	}
-	.port-wrapper:hover{
+
+	.port-modal-detail{
+		width: 33%;
+		padding-top: 60px;
+		float: right;
+		z-index: 1;
+		margin-right: 60px;
+	}
+
+	.port-modal-detail::-webkit-scrollbar{
+		display: none;
+	}
+
+	.port-modal-text-header{
+		font-size: 2.618em;
+	    font-family: 'Inconsolata-medium';
+	}
+
+	.port-modal-text-link a{
+		color: white;
+	    font-family: 'Inconsolata-medium';
+	}
+
+	#mobile-header{
+		display: none;
+		z-index: 1;
+		position: fixed;
+		background: rgba(0,0,0,0.9);
+		width: 100%;
+    	height: 100%;
+	}
+	#mobile-header-table{
+		margin-top: 95px;
+		text-align: center;
+	}
+	.mobile-header-item a{
+		color: white;
+			text-decoration: none;
+			font-size: 1.618em;
+			 font-family: 'Inconsolata-medium';
+	}
+	li.mobile-header-item:hover{
 		cursor: pointer;
 	}
-	.pab-banner{
-		background:url('../assets/pab-banner1.jpg');
-	}
 
-	/*skills*/
-	.skills-wrapper{
-		width: 80%;
-		margin:0 auto;
-		
-	}
-	.skills-item{
-		width:60%;
-		margin:30px auto;
-	}
-	.skills-item-title{
-		font-size: 1.618em;
-	  	font-family: 'Inconsolata-bold';
-	}
-	.skills-item-detail p{
-		margin-top: 15px;
-		line-height: 2;
-		letter-spacing: 2px;
-		font-family: 'NotoSerif-Regular';
-	}
-	/*about*/
-	.about-wrapper{
-		width: 80%;
-		margin:15px auto;
-	}
-	.about-detail p {
-		line-height: 2;
-	    font-family: 'NotoSerif-Regular';
-	    letter-spacing: 2px;
-	}
-	.about-img{
-		background:url('../assets/pchen.jpg');
-		height: 250px;
-		width: auto;
-		display: block;
-		background-size:contain;
-		background-repeat: no-repeat;
-		border-right: 2px dotted black;
-	}
-
-
-
-	/*contact*/
-
-	.contact-form{
-		width: 60%;
-		margin:0 auto;
-		min-width: 300px;
-	}
-
-	input[type="text"] {
-	    border-left: 0px;
-	    border-right: 0px;
-	    border-top: 0px;
-	    border-radius: 0px;
-	    border-bottom: 2px dotted black;
-	    background:transparent;
-	    width: 100%;
-	    font-family: 'Inconsolata-medium';
-	    padding:1em .5em;
-	    font-size: 1.618em;
-	}
-
-	input[type="text"]:focus{
-		border:0px;
-		border-bottom: 2px solid black;
-	}
-
-	input[type="submit"]{
-		border: 2px solid black;
-	    border-radius: 0px;
-	    font-family: 'Inconsolata-medium';
-	    font-size: 1.618em;
-	    color: black;
-	    letter-spacing: 2px;
-	    display: block;
-	    height: initial;
-	    padding:.5em 1.5em;
-	}
-	
-	input[type="submit"]:focus{
-		border:2px solid white;
-	}
-
-	input[type="submit"]:hover{
-		border:2px solid white;
-	}
-
-	label{
-		font-size: 2.618em;
-	    font-family: 'Inconsolata-medium';
-	    font-weight: 300;
-
-	}
-
-	textarea{
-		border:0px!important;
-		border-radius: 0px!important;
-		background:transparent;
-		border-bottom: 2px dotted black!important;
-		width: 100%;
-		font-family: 'Inconsolata-medium';
-	    padding:1em .5em;
-	    font-size: 1.618em;
-	}
-
-	textarea::-webkit-scrollbar{
+	.error{
+		color: red;
 		display: none;
+		font-family: 'Inconsolata-medium';
+		font-size: 1em;
+		padding:15px 0px;
 	}
 
-	textarea:focus{
-		border:0px;
-		border-bottom: 2px solid black;
+
+	#footer{
+		height: 60px;
+		margin-top: 60px;
+		text-align: center;
+		border-top: 1px dotted black;
+	}
+	#footer a{
+		color: white;
+		line-height: 60px;
+		font-family: 'Inconsolata-medium';
+		font-size: 1.618em;
+	}
+	.success-container{
+	position: fixed;
+    background: radial-gradient(at 90% bottom,white,#FFD81E,#E90084,#ceddf9);
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    text-align: center;
+
+	}
+	.success-header{
+		    color: white;
+		    margin-top: 15%;
+		    font-family: 'Inconsolata-medium';
+		    font-size: 2.618em;
+
+	}
+	.success-body{
+		color: white;
+		font-family: 'Inconsolata-medium';
+		font-size: 1.618em;
 	}
 
-/*modal*/
-#port-modal{
-	height: 100vh;
-	background:rgba(0,0,0,0.8);
-	display: none;
-	overflow: scroll;
-}
-.port-modal-images{
-	width: 60%;
-	float: left;
-	overflow-y: scroll; 
-}
-.port-modal-images-inner img{
-	width: 80%;
-	display: block;
-	margin:0 auto;
-	height: 50%;
-    margin: 15% auto;
-}
+	@media(max-width: 1100px){
+		.header-item{
+			font-size: 1em;	
+		}
+	}	
 
-.port-modal-detail{
-	width: 33%;
-	float: right;
-}
+
+	@media(max-width: 968px){
+		.header-item{
+			display: none;	
+		}
+		.header-item.header-logo{
+			display: block;	
+		}
+		.hamburger-menu{
+			display: block;
+		}
+		.hamburger-menu:hover{
+			cursor: pointer;
+		}
+		.port-modal-images{
+			width: 100%;
+			height: 50vh
+		}
+		.port-modal-detail{
+			width: 100%;
+			text-align: center;
+			margin-right: 0px;
+			position: relative;
+		}
+		.port-modal-images:after {
+			bottom: 50%;
+		}
+		.port-modal-text-inner{
+			padding-left: 60px;
+		    padding-right: 60px;
+		    padding-bottom: 60px;
+		}
+		.port-modal-detail{
+			z-index: 10;
+			position: relative;
+		}
+	}
+
+	@media(max-width: 568px){
+		.port-modal-detail{
+			padding-top: 30px;
+		}
+		.hero-text{
+			padding-left: 0px;
+			text-align: center;
+		}
+		#hero-header-text{
+			font-size: 2.618em;
+			margin-top: 25%;
+		}
+		#hero-detail-text{
+			font-size: 1em;
+		}
+		.port-item-title{
+			font-size: 1.618em;
+		}
+		.sec-header{
+			font-size: 2.618em;
+			text-align: center;
+			padding-left: 0px
+		}
+		.sec-header:after{
+			margin:0 auto;
+		}
+		.port-item-title{
+			line-height: initial;
+			top: 40%;
+			padding-left: 0px;
+			text-align: center;
+			left: 0;
+			right: 0;
+			font-size: 1.618em;
+		}
+		.about-img{
+			margin-bottom: 30px;
+		}
+		.skills-item{
+			width: 90%;
+		}
+		.skills-item-detail p{
+			text-align: center;
+		}
+		.skills-item-title{
+			text-align: center;
+		}
+		.about-detail p{
+			text-align: center;
+		}
+		.about-img{
+			width: 250px;
+			margin-left: auto;
+    		margin-right: auto;
+		} 
+		.contact-form{
+			text-align: center;
+		}
+		label{
+			font-size: 1.618em;
+		}
+		input[type="submit"]{
+			margin:0 auto;
+		}
+		.success-header{
+			padding: 0 30px;
+			font-size: 1.618em;
+		}
+		.success-body{
+			font-size: 1em;
+			padding: 0px 60px;
+		}
+	}
